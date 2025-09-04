@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/setting_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/frameMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- arrow back -->
+        <FrameLayout
+            android:id="@+id/arrowBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/back_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ripple_color_arrow"
+                android:clickable="true"
+                android:focusable="true"
+                android:padding="10dp"
+                android:src="@drawable/ic_arrow_left"
+                app:tint="@color/white_night" />
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Settings"
+            android:textColor="?attr/colorTertiary"
+            android:textSize="24sp" />
+
+    </FrameLayout>
+
+    <!-- information profile -->
+    <FrameLayout
+        android:id="@+id/frameLayoutProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/ripple_color_blue"
+        android:orientation="horizontal"
+        android:padding="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameMain">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:src="@drawable/img_profile"
+            app:civ_border_color="@color/white_night"
+            app:civ_border_width="1dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginStart="64dp"
+            android:layout_marginEnd="54dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="6dp"
+                android:text="Vahid Yousefi"
+                android:textColor="@color/white_night"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="8dp"
+                android:text="vahidyousefi@gmail.com"
+                android:textColor="@color/blue_ripple"
+                android:textSize="13sp" />
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|end"
+            android:src="@drawable/ic_arrow_right"
+            app:tint="@color/blue_ripple" />
+
+    </FrameLayout>
+
+    <!-- box 1 -->
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/shape_back_settings"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayoutProfile">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="12dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:src="@drawable/ic_notification_off"
+                app:tint="@color/blue_ripple" />
+
+            <!--            <TextView-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginStart="32dp"-->
+            <!--                android:layout_marginTop="14dp"-->
+            <!--                android:text="Pause notification"-->
+            <!--                android:textColor="@color/white_night" />-->
+
+            <com.google.android.material.materialswitch.MaterialSwitch
+                android:id="@+id/sw_notif"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginStart="32dp"
+                android:text="Pause notification"
+                android:textColor="@color/white_night"
+                app:thumbTint="@color/selector_switch_thumb"
+                app:trackTint="@color/selector_switch_track" />
+
+        </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:background="@color/gray_light2" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="12dp"
+            android:padding="12dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:src="@drawable/ic_general_setting"
+                app:tint="@color/blue_ripple" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="14dp"
+                android:text="General Settings"
+                android:textColor="@color/white_night" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="12dp"
+                android:src="@drawable/ic_arrow_right"
+                app:tint="@color/blue_ripple" />
+
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+    <!-- box 2 -->
+    <LinearLayout
+        android:id="@+id/linear2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/shape_back_settings"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linear1">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="12dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:src="@drawable/ic_dark_mood"
+                app:tint="@color/blue_ripple" />
+
+            <TextView
+                android:clickable="true"
+                android:focusable="true"
+                android:background="@drawable/ripple_color_text"
+                android:id="@+id/txt_darkMode"
+                android:layout_width="match_parent"
+                android:layout_marginEnd="74dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="14dp"
+                android:text="Dark mode"
+                android:textColor="@color/white_night" />
+
+            <ImageView
+                android:layout_gravity="end"
+                android:layout_marginEnd="64dp"
+                android:layout_width="1dp"
+                android:layout_height="50dp"
+                android:background="@drawable/shape_cursor"
+                android:backgroundTint="@color/blue_light" />
+
+            <com.google.android.material.materialswitch.MaterialSwitch
+                android:id="@+id/sw_darkMode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                app:thumbIconTint="?attr/colorOnSecondary"
+                app:thumbTint="@color/selector_switch_thumb"
+                app:trackTint="@color/selector_switch_track" />
+
+        </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:background="@color/gray_light2" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="12dp"
+            android:padding="12dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="12dp"
+                android:src="@drawable/ic_language"
+                app:tint="@color/blue_ripple" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="14dp"
+                android:text="Language"
+                android:textColor="@color/white_night" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="12dp"
+                android:src="@drawable/ic_arrow_right"
+                app:tint="@color/blue_ripple" />
+
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+    <!-- box 3 -->
+    <LinearLayout
+        android:id="@+id/linear3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/shape_back_settings"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linear2">
+
+        <FrameLayout
+            android:id="@+id/FAQ"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="12dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:src="@drawable/ic_faq"
+                app:tint="@color/blue_ripple" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="14dp"
+                android:text="FAQ"
+                android:textColor="@color/white_night" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:src="@drawable/ic_arrow_right"
+                app:tint="@color/blue_ripple" />
+
+
+        </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:background="@color/gray_light2" />
+
+        <FrameLayout
+            android:id="@+id/terms_of_service"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="12dp"
+            android:padding="12dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:src="@drawable/ic_terms"
+                app:tint="@color/blue_ripple" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="14dp"
+                android:text="Terms of service"
+                android:textColor="@color/white_night" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="12dp"
+                android:src="@drawable/ic_arrow_right"
+                app:tint="@color/blue_ripple" />
+
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+    <!-- log out Button -->
+    <com.google.android.material.button.MaterialButton
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        android:text="Log out"
+        android:textColor="@color/red"
+        app:icon="@drawable/ic_log_out"
+        app:iconGravity="textStart"
+        app:iconTint="@color/red"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linear3"
+        app:rippleColor="@color/red_ripple"
+        app:strokeColor="@color/red" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

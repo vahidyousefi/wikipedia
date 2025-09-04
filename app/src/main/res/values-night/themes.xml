@@ -1,0 +1,84 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Wikipedia" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your dark theme here. -->
+
+        <item name="colorPrimary">@color/black_night</item>
+        <item name="colorPrimaryVariant">@color/black_night</item>
+        <item name="colorOnPrimary">@color/white_night</item>
+
+        <item name="colorPrimaryContainer">@color/blue_dark</item>
+
+        <item name="colorSecondary">@color/orange</item>
+        <item name="colorSecondaryVariant">@color/orange</item>
+        <item name="colorOnSecondary">@color/blue_dark</item>
+
+        <item name="colorSecondaryContainer">@color/blue_dark</item>
+
+        <item name="colorTertiary">@color/white_night</item>
+
+        <item name="colorControlActivated">#626262</item>
+
+        <item name="fontFamily">@font/open_sans_medium</item>
+
+        <!-- ripple color lack -->
+        <item name="colorTertiaryContainer">#87616161</item>
+
+        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+    </style>
+
+    <!-- Customize your Popup-Menu here. -->
+    <style name="PopupMenu" parent="Widget.Material3.PopupMenu">
+
+        <item name="colorSurfaceContainer">@color/thumb_switch_unchecked</item>
+        <item name="colorControlHighlight">@color/blue_ripple_dark</item>
+        <item name="android:tint">@color/white_night</item>
+        <item name="android:textColor">@color/white_night</item>
+
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <!-- Customize your ToolBarMain here. -->
+    <style name="ToolbarMain" parent="ThemeOverlay.Material3.BottomAppBar">
+
+        <item name="fontFamily">@font/open_sans_bold</item>
+        <item name="android:textSize">24sp</item>
+
+    </style>
+
+    <!-- Customize your ToolBar-Setting here. -->
+    <style name="ToolbarSettings" parent="ThemeOverlay.Material3.BottomAppBar">
+
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSurface">#131314</item>
+        <item name="colorOnSurface">@color/white</item>
+
+    </style>
+
+    <!-- Customize your Bottom Navigation here. -->
+    <style name="MyBottomNavigation" parent="Theme.Material3.DayNight.NoActionBar">
+
+        <item name="colorPrimaryVariant">#EF212121</item>
+
+        <item name="colorSurface">@color/black_night</item>
+        <item name="colorOnSurface">@color/blue_light</item>
+
+        <item name="colorSecondaryContainer">@color/blue_ripple_dark</item>
+        <item name="colorOnSecondaryContainer">@color/blue_dark</item>
+
+    </style>
+
+    <!-- Customize your Chip here. -->
+    <style name="MyChip" parent="Theme.MaterialComponents.DayNight">
+
+        <item name="colorOnSecondaryContainer">@color/white_night</item>
+    </style>
+
+    <!-- Customize your Text Fa here. -->
+    <style name="MyTextFa" parent="Widget.Material3.ChipGroup">
+
+        <item name="fontFamily">@font/dana_medium</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+</resources>

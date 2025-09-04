@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFF</color>
+
+    <color name="white_night">#F6F6F6</color>
+    <color name="blue_light">#29B6F6</color>
+    <color name="blue_ripple">#BBDEFB</color>
+    <color name="orange">#FF7043</color>
+    <color name="gray">#616161</color>
+    <color name="gray_light">#7A7A7A</color>
+    <color name="gray_light1">#D5D5D5</color>
+    <color name="gray_light2">#EBEAEA</color>
+    <color name="green">#0D8712</color>
+    <color name="yello">#FFEB3B</color>
+    <color name="red">#D32F2F</color>
+    <color name="red_ripple">#6BD32F2F</color>
+
+    <!-- theme dark -->
+    <color name="blue_dark">#1976D2</color>
+    <color name="blue_ripple_dark">#023052</color>
+    <color name="black_night">#212121</color>
+
+    <!-- Switch Checked -->
+    <color name="blue_track_switch">#90CAF9</color>
+    <color name="thumb_switch_checked">#F6F6F6</color>
+    <color name="track_switch_checked">#FF7043</color>
+
+    <!-- Switch Unchecked -->
+    <color name="thumb_switch_unchecked">#616161</color>
+    <color name="track_switch_unchecked">#F6F6F6</color>
+
+
+</resources>
