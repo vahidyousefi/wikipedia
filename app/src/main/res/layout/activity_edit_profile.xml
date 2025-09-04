@@ -206,7 +206,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="end"
-                        android:text=" @VahidYousefi247"
+                        android:text=" @VahidYousefi20"
                         android:textColor="@color/white_night"
                         android:textSize="15sp" />
 
