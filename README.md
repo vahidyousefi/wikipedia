@@ -5,11 +5,21 @@ Wikipedia app with a Material Design look for Android, developed with Kotlin and
 | ![enter image description here](https://h3.linklick.ir/c060e423e78b1b40c96a33f737d1a2f2/IMG_20250905_141944.jpg) | ![enter image description here](https://h3.linklick.ir/c060e423e78b1b40c96a33f737d1a2f2/IMG_20250905_142033.jpg) |
 | ![enter image description here](https://h3.linklick.ir/c060e423e78b1b40c96a33f737d1a2f2/IMG_20250905_142015.jpg) | ![enter image description here](https://h3.linklick.ir/c060e423e78b1b40c96a33f737d1a2f2/IMG_20250905_141957.jpg) |
 
-# Used libraries
+# Features 🚀
+* **Search Wikipedia articles**
+* **Display articles with a simple and user-friendly interface**
+* **Using Kotlin for application logic**
+* **Designing user interfaces with XML**
+* **Compatibility with different versions of Android**
+
+# Used libraries 📚
 * **[Glide]**
 * **[ion Alert]**
 * **[Sweet Alert Dialog]**
 * **[circle image view]**
+
+# Instalation ⬇️
+
 
 [Glide]: https://github.com/bumptech/glide
 [ion Alert]: https://github.com/oktavianto/ionalert
