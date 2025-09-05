@@ -221,23 +221,23 @@
                 app:tint="@color/blue_ripple" />
 
             <TextView
-                android:clickable="true"
-                android:focusable="true"
-                android:background="@drawable/ripple_color_text"
                 android:id="@+id/txt_darkMode"
                 android:layout_width="match_parent"
-                android:layout_marginEnd="74dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="32dp"
                 android:layout_marginTop="14dp"
+                android:layout_marginEnd="74dp"
+                android:background="@drawable/ripple_color_text"
+                android:clickable="true"
+                android:focusable="true"
                 android:text="Dark mode"
                 android:textColor="@color/white_night" />
 
             <ImageView
-                android:layout_gravity="end"
-                android:layout_marginEnd="64dp"
                 android:layout_width="1dp"
                 android:layout_height="50dp"
+                android:layout_gravity="end"
+                android:layout_marginEnd="64dp"
                 android:background="@drawable/shape_cursor"
                 android:backgroundTint="@color/blue_light" />
 
@@ -384,6 +384,7 @@
 
     <!-- log out Button -->
     <com.google.android.material.button.MaterialButton
+        android:id="@+id/materialButton"
         style="?attr/materialButtonOutlinedStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -398,5 +399,33 @@
         app:layout_constraintTop_toBottomOf="@+id/linear3"
         app:rippleColor="@color/red_ripple"
         app:strokeColor="@color/red" />
+
+    <!-- Version text -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        android:alpha="0.5"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/materialButton">
+
+        <TextView
+            android:id="@+id/versionNameApp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="4dp"
+            android:text="Develop with ❤️ by Vahid Yousefi" />
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

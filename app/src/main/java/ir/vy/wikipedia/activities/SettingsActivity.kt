@@ -1,5 +1,6 @@
 package ir.vy.wikipedia.activities
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.content.res.ColorStateList
 import android.content.res.Configuration
@@ -28,8 +29,8 @@ import kotlinx.coroutines.launch
 class SettingsActivity : AppCompatActivity() {
     private lateinit var binding: ActivitySettingsBinding
 
+    @SuppressLint("SetTextI18n")
     override fun onCreate(savedInstanceState: Bundle?) {
-
         // set first change theme
         val sharedDarkMode = getSharedPreferences("DarkModePrefs", MODE_PRIVATE)
         val isDarkModeEnabled = sharedDarkMode.getBoolean("isDarkModeEnabled", false)
@@ -48,6 +49,15 @@ class SettingsActivity : AppCompatActivity() {
         binding = ActivitySettingsBinding.inflate(layoutInflater)
         setContentView(binding.root)
         enableEdgeToEdge()
+
+        // auto change versionName from gradle -------------------------------------
+        // get info
+        val packageInfo = this.packageManager.getPackageInfo(this.packageName, 0)
+        // get versionName
+        val versionName = packageInfo.versionName
+        // show versionName
+        binding.versionNameApp.text = "Version $versionName"
+        //--------------------------------------------------------------------------
 
         binding.backArrow.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java).apply {
