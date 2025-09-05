@@ -24,9 +24,9 @@ git clone https://github.com/vahidyousefi/wikipedia
 ```
 # Contribute
 [1] If you are interested in contributing to this project:
-[2] Fork the repository from https://github.com/vahidyousefi/wikipedia.
-[3] Put your changes in a new branch
-[4] Submit a Pull Request.
+* [2] Fork the repository from ```https://github.com/vahidyousefi/wikipedia```
+* [3] Put your changes in a new branch
+* [4] Submit a Pull Request.
 
 [Glide]: https://github.com/bumptech/glide
 [ion Alert]: https://github.com/oktavianto/ionalert
