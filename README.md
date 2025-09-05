@@ -19,7 +19,9 @@ Wikipedia app with a Material Design look for Android, developed with Kotlin and
 * **[circle image view]**
 
 # Instalation ⬇️
-(https://github.com/vahidyousefi/wikipedia)
+```
+git clone (https://github.com/vahidyousefi/wikipedia)
+```
 
 
 [Glide]: https://github.com/bumptech/glide
