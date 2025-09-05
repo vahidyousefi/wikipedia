@@ -1,3 +1,8 @@
 # wikipedia
 wikipedia android
-![Mockup](https://github.com/user-attachments/assets/24a713-c4d6-4f0f-ab27-22c0eaf97480)
+| Screenshot | Screenshot |
+|--|--|
+| ![enter image description here](https://raw.githubusercontent.com/oktavianto/ionalert/master/screenshot/1.jpg) | ![enter image description here](https://raw.githubusercontent.com/oktavianto/ionalert/master/screenshot/2.jpg) |
+| ![enter image description here](https://raw.githubusercontent.com/oktavianto/ionalert/master/screenshot/3.jpg) | ![enter image description here](https://raw.githubusercontent.com/oktavianto/ionalert/master/screenshot/4.jpg) |
+| ![enter image description here](https://raw.githubusercontent.com/oktavianto/ionalert/master/screenshot/5.jpg) | ![enter image description here](https://raw.githubusercontent.com/oktavianto/ionalert/master/screenshot/6.jpg) |
+
