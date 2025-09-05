@@ -20,7 +20,7 @@ Wikipedia app with a Material Design look for Android, developed with Kotlin and
 
 # Instalation ⬇️
 ```
-git clone (https://github.com/vahidyousefi/wikipedia)
+git clone https://github.com/vahidyousefi/wikipedia
 ```
 
 
