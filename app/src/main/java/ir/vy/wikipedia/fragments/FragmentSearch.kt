@@ -38,7 +38,7 @@ class FragmentSearch : Fragment() {
         }
 
         // change in chipGroup
-        binding.chipGroupMain.setOnCheckedChangeListener { group, checkedId ->
+        binding.chipGroupMain.setOnCheckedChangeListener { _, checkedId ->
 
             when (checkedId) {
 
