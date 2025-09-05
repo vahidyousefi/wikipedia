@@ -7,8 +7,11 @@ Wikipedia Android
 
 # Used libraries
 * **[Glide]**
-* **ion Alert**
-* **Sweet Alert Dialog**
-* **circle image view**
+* **[ion Alert]**
+* **[Sweet Alert Dialog]**
+* **[circle image view]**
 
 [Glide]: https://github.com/bumptech/glide
+[ion Alert]: https://github.com/oktavianto/ionalert
+[Sweet Alert Dialog]: https://github.com/F0RIS/sweet-alert-dialog
+[circle image view]: https://github.com/hdodenhof/CircleImageView
