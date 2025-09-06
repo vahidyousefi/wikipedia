@@ -21,6 +21,10 @@
 ```
 git clone https://github.com/vahidyousefi/wikipedia
 ```
+
+# Download App
+For Download app for Android > [Click]
+
 # Contribute ❤️
 ### If you are interested in contributing to this project:
 1. Fork the repository from `https://github.com/vahidyousefi/wikipedia`
@@ -31,3 +35,4 @@ git clone https://github.com/vahidyousefi/wikipedia
 [ion Alert]: https://github.com/oktavianto/ionalert
 [Sweet Alert Dialog]: https://github.com/F0RIS/sweet-alert-dialog
 [circle image view]: https://github.com/hdodenhof/CircleImageView
+[Click]: https://h3.linklick.ir/c060e423e78b1b40c96a33f737d1a2f2/Wikipedia-v1.0.0.apk
