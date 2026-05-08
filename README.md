@@ -1,5 +1,5 @@
 **Wikipedia** app with a Material Design look for Android, developed with Kotlin and XML
-| Dark Mode | Light Mode |
+| Light Mode | Dark Mode |
 |--|--|
 | ![enter image description here](demo/shot1.jpg) | ![enter image description here](demo/shot2.jpg) |
 | ![enter image description here](demo/shot6.jpg) | ![enter image description here](demo/shot5.jpg) |
