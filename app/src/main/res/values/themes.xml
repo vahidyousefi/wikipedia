@@ -2,12 +2,10 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.Wikipedia" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
-
         <item name="colorPrimary">@color/blue_dark</item>
         <item name="colorPrimaryVariant">@color/white_night</item>
         <item name="colorOnPrimary">@color/white</item>
         <item name="colorPrimaryContainer">@color/blue_dark</item>
-
 
         <item name="android:colorBackground">@color/white_night</item>
 
@@ -27,7 +25,6 @@
         <!-- ripple color lack -->
         <item name="colorTertiaryContainer">#87BBDEFB</item>
 
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
     </style>
 
     <style name="Theme.Wikipedia" parent="Base.Theme.Wikipedia" />
@@ -72,6 +69,11 @@
 
         <item name="colorSecondaryContainer">@color/blue_ripple</item>
         <item name="colorOnSecondaryContainer">@color/blue_dark</item>
+    </style>
+
+    <!-- Color BlurView -->
+    <style name="MyBlurView">
+        <item name="blurOverlayColor">@color/colorOverlayLight</item>
     </style>
 
     <!-- Customize your Chip here. -->

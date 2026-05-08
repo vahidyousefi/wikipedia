@@ -2,11 +2,9 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.Wikipedia" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your dark theme here. -->
-
         <item name="colorPrimary">@color/black_night</item>
         <item name="colorPrimaryVariant">@color/black_night</item>
         <item name="colorOnPrimary">@color/white_night</item>
-
         <item name="colorPrimaryContainer">@color/blue_dark</item>
 
         <item name="colorSecondary">@color/orange</item>
@@ -24,7 +22,6 @@
         <!-- ripple color lack -->
         <item name="colorTertiaryContainer">#87616161</item>
 
-        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
     </style>
 
     <!-- Customize your Popup-Menu here. -->
@@ -66,6 +63,11 @@
         <item name="colorSecondaryContainer">@color/blue_ripple_dark</item>
         <item name="colorOnSecondaryContainer">@color/blue_dark</item>
 
+    </style>
+
+    <!-- Color BlurView -->
+    <style name="MyBlurView">
+        <item name="blurOverlayColor">@color/colorOverlayDark</item>
     </style>
 
     <!-- Customize your Chip here. -->

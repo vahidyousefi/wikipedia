@@ -27,7 +27,7 @@
                 android:background="?attr/colorPrimary"
                 app:layout_scrollFlags="scroll|enterAlways"
                 app:popupTheme="@style/PopupMenu"
-                app:title=" ">
+                app:title="">
 
                 <ImageView
                     android:layout_width="150dp"
@@ -36,51 +36,61 @@
                     android:src="@drawable/img_wikipedia"
                     app:tint="@color/white" />
 
-<!--                <ImageView-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_gravity="end"-->
-<!--                    android:layout_marginEnd="16dp"-->
-<!--                    android:src="@drawable/ic_alert" />-->
+                <!--                <ImageView-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_gravity="end"-->
+                <!--                    android:layout_marginEnd="16dp"-->
+                <!--                    android:src="@drawable/ic_alert" />-->
 
             </androidx.appcompat.widget.Toolbar>
 
         </com.google.android.material.appbar.AppBarLayout>
 
-        <!-- Frame Main -->
-        <FrameLayout
-            android:id="@+id/frame_main"
+        <!-- Frame Main for Blur -->
+        <eightbitlab.com.blurview.BlurTarget
+            android:id="@+id/target"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginBottom="56dp"
             app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
 
-        </FrameLayout>
+            <!-- Frame Main -->
+            <FrameLayout
+                android:id="@+id/frame_main"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
-        <!-- Bottom Navigation -->
-        <androidx.cardview.widget.CardView
+            </FrameLayout>
+
+        </eightbitlab.com.blurview.BlurTarget>
+
+        <!-- BlurView -->
+        <eightbitlab.com.blurview.BlurView
+            app:layout_behavior="com.google.android.material.behavior.HideBottomViewOnScrollBehavior"
+            android:id="@+id/topBlurView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
-            android:layout_marginBottom="4dp"
-            android:theme="@style/MyBottomNavigation"
-            app:cardCornerRadius="16dp"
-            app:cardElevation="2dp">
+            android:layout_marginVertical="24dp"
+            android:layout_marginHorizontal="16dp"
+            android:background="@drawable/shape_rounded"
+            android:theme="@style/MyBlurView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
             <com.google.android.material.bottomnavigation.BottomNavigationView
                 android:id="@+id/bottom_navigation_main"
                 style="@style/Widget.Material3.BottomNavigationView"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="?attr/colorPrimaryVariant"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
                 android:paddingStart="8dp"
                 android:paddingEnd="8dp"
                 app:labelVisibilityMode="labeled"
                 app:menu="@menu/menu_navigation_bottom" />
 
-        </androidx.cardview.widget.CardView>
+        </eightbitlab.com.blurview.BlurView>
 
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
@@ -89,8 +99,8 @@
         android:id="@+id/navigationViewMain"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:layout_marginTop="90dp"
         android:layout_gravity="start"
+        android:layout_marginTop="90dp"
         android:fitsSystemWindows="true"
         app:headerLayout="@layout/header_main"
         app:menu="@menu/menu_navigation_drawer" />

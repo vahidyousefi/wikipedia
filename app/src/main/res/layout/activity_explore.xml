@@ -91,16 +91,16 @@ Hindenburg was commissioned late in the war and as a result had a brief service 
     </androidx.core.widget.NestedScrollView>
 
     <!--FAB pen in Appbar-->
-    <!--    <com.google.android.material.floatingactionbutton.FloatingActionButton-->
-    <!--        android:layout_width="wrap_content"-->
-    <!--        android:layout_height="wrap_content"-->
-    <!--        android:backgroundTint="@color/blue_dark"-->
-    <!--        android:src="@drawable/ic_edits"-->
-    <!--        app:fabSize="normal"-->
-    <!--        app:layout_anchor="@id/appBar_main"-->
-    <!--        app:layout_anchorGravity="bottom|end"-->
-    <!--        app:tint="@color/white_night"-->
-    <!--        app:useCompatPadding="true" />-->
+<!--        <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:backgroundTint="@color/blue_dark"-->
+<!--            android:src="@drawable/ic_edits"-->
+<!--            app:fabSize="normal"-->
+<!--            app:layout_anchor="@id/appBar_main"-->
+<!--            app:layout_anchorGravity="bottom|end"-->
+<!--            app:tint="@color/white_night"-->
+<!--            app:useCompatPadding="true" />-->
     <!--FAB Camera-->
     <!--    <com.google.android.material.floatingactionbutton.FloatingActionButton-->
     <!--        android:layout_width="wrap_content"-->

@@ -1,6 +1,8 @@
 package ir.vy.wikipedia.activities
 
+import android.annotation.SuppressLint
 import android.content.Intent
+import android.os.Build
 import android.os.Bundle
 import android.view.MenuItem
 import android.view.ViewGroup
@@ -15,6 +17,7 @@ import com.bumptech.glide.Glide
 import ir.vy.wikipedia.data.ItemPost
 import ir.vy.wikipedia.databinding.ActivityExploreBinding
 import ir.vy.wikipedia.fragments.SEND_DATA_TO_SECOND
+import ir.vy.wikipedia.util.autoMargin
 
 class ExploreActivity : AppCompatActivity() {
     private lateinit var binding: ActivityExploreBinding
@@ -41,23 +44,22 @@ class ExploreActivity : AppCompatActivity() {
         // set title collapsing in scroll
         binding.collapsingToolbar.title = ""
         // create icon arrow back
-        supportActionBar!!.setHomeButtonEnabled(true)
-        supportActionBar!!.setDisplayHomeAsUpEnabled(true)
-
-        // auto padding fab from navigation system
-        ViewCompat.setOnApplyWindowInsetsListener(binding.fabOpenWeb) { view, insets ->
-            val bottom = insets.getInsets(WindowInsetsCompat.Type.systemBars()).bottom
-            (view.layoutParams as? ViewGroup.MarginLayoutParams)?.let { params ->
-                params.bottomMargin = bottom + 24
-                view.layoutParams = params
-            }
-            insets
+        supportActionBar!!.apply {
+            setHomeButtonEnabled(true)
+            setDisplayHomeAsUpEnabled(true)
         }
 
-        // get data Explore
-        val dataPostExplore = intent.getParcelableExtra<ItemPost>(SEND_DATA_TO_SECOND)
-        if (dataPostExplore != null) {
+        // auto padding fab from navigation system
+        autoMargin(binding.root)
 
+        // get data Explore
+        val dataPostExplore = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+            intent.getParcelableExtra(SEND_DATA_TO_SECOND, ItemPost::class.java)
+        }
+        else {
+            intent.getParcelableExtra(SEND_DATA_TO_SECOND)
+        }
+        if (dataPostExplore != null) {
             showDataExplore(dataPostExplore)
         }
     }
@@ -89,7 +91,7 @@ class ExploreActivity : AppCompatActivity() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         // item back
         if (item.itemId == android.R.id.home) {
-            onBackPressed()
+            finish()
         }
         return true
     }

@@ -4,7 +4,7 @@ import android.app.Dialog
 import android.os.Bundle
 import androidx.appcompat.app.AlertDialog
 import androidx.fragment.app.DialogFragment
-import ir.vy.wikipedia.function.showToast
+import ir.vy.wikipedia.util.showToast
 import ir.vy.wikipedia.databinding.DialogFullnameBinding
 
 class DialogFullName(private val dialogFullName: DialogFullNameEvent) : DialogFragment() {

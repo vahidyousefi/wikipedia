@@ -20,7 +20,7 @@ import androidx.core.view.WindowCompat
 import com.google.android.material.snackbar.Snackbar
 import ir.vy.wikipedia.R
 import ir.vy.wikipedia.databinding.ActivitySettingsBinding
-import ir.vy.wikipedia.function.snackBar
+import ir.vy.wikipedia.util.snackBar
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay

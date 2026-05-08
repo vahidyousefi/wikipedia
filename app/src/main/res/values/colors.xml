@@ -30,5 +30,7 @@
     <color name="thumb_switch_unchecked">#616161</color>
     <color name="track_switch_unchecked">#F6F6F6</color>
 
+    <color name="colorOverlayLight">#78ffffff</color>
+    <color name="colorOverlayDark">#331A1A2E</color>
 
 </resources>

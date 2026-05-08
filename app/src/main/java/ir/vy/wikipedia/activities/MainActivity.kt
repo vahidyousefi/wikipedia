@@ -2,6 +2,7 @@ package ir.vy.wikipedia.activities
 
 import android.annotation.SuppressLint
 import android.content.Intent
+import android.graphics.Color
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
@@ -28,8 +29,8 @@ import ir.vy.wikipedia.fragments.FragmentExplore
 import ir.vy.wikipedia.fragments.FragmentSaved
 import ir.vy.wikipedia.fragments.FragmentSearch
 import ir.vy.wikipedia.fragments.FragmentVideomaker
-import ir.vy.wikipedia.function.snackBar
-
+import ir.vy.wikipedia.util.snackBar
+import androidx.core.graphics.drawable.toDrawable
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
@@ -166,6 +167,7 @@ class MainActivity : AppCompatActivity() {
         //------ Navigation Bottom ------
         // Opening Fragment for the first time
         firstRun()
+        initBlur()
 
         binding.bottomNavigationMain.setOnItemSelectedListener {
 
@@ -231,8 +233,19 @@ class MainActivity : AppCompatActivity() {
         binding.bottomNavigationMain.selectedItemId = R.id.menu_explore
     }
 
-    //----------------------------------------------------------
+    private fun initBlur(){
 
+        val background = window.decorView.background ?: Color.TRANSPARENT.toDrawable()
+
+        binding.topBlurView.apply {
+            setupWith(binding.target)
+                .setFrameClearDrawable(background)
+                .setBlurAutoUpdate(true)
+                .setBlurRadius(12f)
+            clipToOutline = true
+        }
+    }
+    //----------------------------------------------------------
     // Create Menu
     @SuppressLint("RestrictedApi")
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {

@@ -1,4 +1,4 @@
-package ir.vy.wikipedia.function
+package ir.vy.wikipedia.util
 
 import android.content.Context
 import android.view.View

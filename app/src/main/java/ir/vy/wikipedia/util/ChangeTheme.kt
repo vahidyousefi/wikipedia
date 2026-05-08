@@ -1,4 +1,4 @@
-package ir.vy.wikipedia.function
+package ir.vy.wikipedia.util
 
 import android.app.Application
 import androidx.appcompat.app.AppCompatDelegate
