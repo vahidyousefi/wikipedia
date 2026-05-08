@@ -25,7 +25,7 @@ class FragmentExplore : Fragment(), ItemEventsExplore, ItemEventsTrend {
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
-        savedInstanceState: Bundle?
+        savedInstanceState: Bundle?,
     ): View {
         binding = FragmentExploreBinding.inflate(layoutInflater, container, false)
         return binding.root
@@ -39,7 +39,7 @@ class FragmentExplore : Fragment(), ItemEventsExplore, ItemEventsTrend {
             // Falak-ol-Aflak
             ItemPost(
                 "https://en.wikipedia.org/wiki/Falak-ol-Aflak",
-                "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Falakolaflak.jpg/500px-Falakolaflak.jpg",
+                imgUrlAssets("Falakolaflak"),
                 "Falak-ol-Aflak",
                 "Castle in Khorramabad, Lorestan, Iran",
                 "Falak ol-Aflak (Persian: فلک الافلاک, 'the sky of the skies') or Shapur Khast Castle (Persian: دژ شاپورخواست) is a castle situated on the top of a large hill with the same name within the city of Khorramabad, the regional capital of Lorestan province, Iran. This gigantic structure was built during the Sasanian era (224–651).\n" +
@@ -53,7 +53,7 @@ class FragmentExplore : Fragment(), ItemEventsExplore, ItemEventsTrend {
                         "Falak ol-Aflak castle is made with different materials like stone and wood that are vulnerable to humidity. That is why the castle was built on the highest point of the city of Khorramabad, so that the wind could penetrate the building and dry its foundations.",
                 //trend
                 "https://en.wikipedia.org/wiki/SummerSlam_%282025%29?wprov=sfla1",
-                "https://upload.wikimedia.org/wikipedia/en/3/39/SummerSlam_2025_poster.jpg",
+                imgUrlAssets("SummerSlam_2025_poster"),
                 "SummerSlam (2025)",
                 "WWE pay-per-view and livestreaming event",
                 "The 2025 SummerSlam, also promoted as SummerSlam: New Jersey, was a professional wrestling pay-per-view (PPV) and livestreaming event produced by WWE. It was the 38th annual SummerSlam and took place as a two-night event on Saturday, August 2, and Sunday, August 3, 2025, at MetLife Stadium in East Rutherford, New Jersey, held for wrestlers from the promotion's Raw and SmackDown brands. Rapper Cardi B served as the hostess of the event.\n" +
@@ -71,14 +71,14 @@ class FragmentExplore : Fragment(), ItemEventsExplore, ItemEventsTrend {
             // battle of warsaw
             ItemPost(
                 "https://en.wikipedia.org/wiki/Battle_of_Warsaw_(1705)",
-                "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Battle_of_Warsaw_1705.PNG/500px-Battle_of_Warsaw_1705.PNG",
+                imgUrlAssets("Battle_of_Warsaw_1705"),
                 "Battle of Warsaw (1705)",
                 "Swedish victory in the Great Northern War",
                 "The Battle of Warsaw (also known as the Battle of Rakowitz or Rakowiec) was fought on 31 July 1705 (Gregorian calendar) near Warsaw in the Polish–Lithuanian Commonwealth, during the Great Northern War and the 1701–1706 Swedish invasion of Poland. The battle was part of a power struggle for the Polish–Lithuanian throne, and was fought between Augustus II the Strong and Stanisław Leszczyński and their allies. Augustus entered the Great Northern War as Elector of Saxony and King of the Polish–Lithuanian Commonwealth, and had formed an alliance with Denmark–Norway and Russia. Stanisław Leszczyński had seized the Polish throne in 1704, with the support of the Swedish army of King Charles XII. The struggle for the throne forced the Polish nobility to pick sides; the Warsaw Confederation supported Leszczyński and Sweden, and the Sandomierz Confederation supported Augustus and his allies. The conflict resulted in the Polish civil war of 1704–1706.",
 
                 //trend
                 "https://en.wikipedia.org/wiki/Sydney_Sweeney?wprov=sfla1",
-                "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Sydney_Sweeney_at_the_2024_Toronto_International_Film_Festival_%28cropped_2%29.jpg/500px-Sydney_Sweeney_at_the_2024_Toronto_International_Film_Festival_%28cropped_2%29.jpg",
+                imgUrlAssets("Sydney_Sweeney"),
                 "Sydney Sweeney",
                 "American actress and producer (born 1997)",
                 "Sydney Bernice Sweeney was born on September 12, 1997, in Spokane, Washington. Her mother is a former criminal defense lawyer, and her father is a hospitality professional. She has one brother. Sweeney was raised in the Idaho panhandle along the Washington border, at a rural lakeside home that her family has inhabited for five generations.According to Sweeney, she has a \"religious family\".\n" +
@@ -94,7 +94,7 @@ class FragmentExplore : Fragment(), ItemEventsExplore, ItemEventsTrend {
             // edward drinker
             ItemPost(
                 "https://en.wikipedia.org/wiki/Edward_Drinker_Cope",
-                "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Cope_Edward_Drinker_1840-1897.jpg/375px-Cope_Edward_Drinker_1840-1897.jpg",
+                imgUrlAssets("Cope_Edward_Drinker_1840-1897"),
                 "Edward Drinker Cope",
                 "American paleontologist and biologist (1840-1897)",
                 "Edward Drinker Cope (July 28, 1840 – April 12, 1897) was an American zoologist, paleontologist, comparative anatomist, herpetologist, and ichthyologist. Born to a wealthy Quaker family, he distinguished himself as a child prodigy interested in science, publishing his first scientific paper at the age of 19. Though his father tried to raise Cope as a gentleman farmer, he eventually acquiesced to his son's scientific aspirations.\n" +
@@ -105,7 +105,7 @@ class FragmentExplore : Fragment(), ItemEventsExplore, ItemEventsTrend {
 
                 //trend
                 "https://en.wikipedia.org/wiki/The_Fantastic_Four%3A_First_Steps?wprov=sfla1",
-                "https://upload.wikimedia.org/wikipedia/en/1/13/The_Fantastic_Four_First_Steps_poster.jpg",
+                imgUrlAssets("The_Fantastic_Four_First_Steps_poster"),
                 "The Fantastic Four: First Steps",
                 "2025 Marvel Studios film",
                 "The Fantastic Four: First Steps is a 2025 American superhero film based on the Marvel Comics superhero team the Fantastic Four. Produced by Marvel Studios and distributed by Walt Disney Studios Motion Pictures, it is the 37th film in the Marvel Cinematic Universe (MCU) and the second reboot of the Fantastic Four film series. The film was directed by Matt Shakman from a screenplay by Josh Friedman, Eric Pearson, and the team of Jeff Kaplan and Ian Springer. It features an ensemble cast including Pedro Pascal, Vanessa Kirby, Ebon Moss-Bachrach, and Joseph Quinn as the titular team, alongside Julia Garner, Sarah Niles, Mark Gatiss, Natasha Lyonne, Paul Walter Hauser, and Ralph Ineson. The film is set in the 1960s of a retro-futuristic world which the Fantastic Four must protect from the planet-devouring cosmic being Galactus (Ineson).\n" +
@@ -119,7 +119,7 @@ class FragmentExplore : Fragment(), ItemEventsExplore, ItemEventsTrend {
             // daily news building
             ItemPost(
                 "https://en.wikipedia.org/wiki/Daily_News_Building",
-                "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Daily_News_Building-2.jpg/500px-Daily_News_Building-2.jpg",
+                imgUrlAssets("Daily_News_Building"),
                 "Daily News Building",
                 "office Skyscraper in Manhattan, New York",
                 "The Daily News Building (also the News Building) is a skyscraper at 220 East 42nd Street in the East Midtown neighborhood of Manhattan, New York City, United States. The original tower, designed by Raymond Hood and John Mead Howells in the Art Deco style and completed in 1930, was one of several major developments constructed on 42nd Street around that time. A similarly-styled expansion, designed by Harrison & Abramovitz, was completed in 1960. When it originally opened, the building received mixed reviews and was described as having a utilitarian design. The Daily News Building is a National Historic Landmark, and its exterior and lobby are New York City designated landmarks.\n" +
@@ -130,7 +130,7 @@ class FragmentExplore : Fragment(), ItemEventsExplore, ItemEventsTrend {
 
                 //trend
                 "https://en.wikipedia.org/wiki/Superman_%282025_film%29?wprov=sfla1",
-                "https://upload.wikimedia.org/wikipedia/en/3/32/Superman_%282025_film%29_poster.jpg",
+                imgUrlAssets("Superman"),
                 "Superman (2025 film)",
                 "2025 DC Studios film",
                 "Superman is a 2025 American superhero film based on the eponymous character from DC Comics. Written and directed by James Gunn, it is the first film in the DC Universe (DCU) and a reboot of the Superman film series. David Corenswet stars as Clark Kent / Superman, alongside Rachel Brosnahan, Nicholas Hoult, Edi Gathegi, Anthony Carrigan, Nathan Fillion, and Isabela Merced. In the film, Superman faces unintended consequences after he intervenes in an international conflict orchestrated by billionaire Lex Luthor (Hoult). Superman must win back public support with the help of his reporter and superhero colleagues. The film was produced by Gunn and Peter Safran of DC Studios.\n" +
@@ -184,5 +184,9 @@ class FragmentExplore : Fragment(), ItemEventsExplore, ItemEventsTrend {
         val intent = Intent(activity, TrendActivity::class.java)
         intent.putExtra(SEND_DATA_TO_SECOND, itemPost)
         startActivity(intent)
+    }
+
+    private fun imgUrlAssets(name: String): String {
+        return "file:///android_asset/$name.jpg"
     }
 }

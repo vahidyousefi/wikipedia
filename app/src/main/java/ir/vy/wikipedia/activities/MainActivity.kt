@@ -44,6 +44,8 @@ class MainActivity : AppCompatActivity() {
 
         // support from toolbar
         setSupportActionBar(binding.toolBarMain)
+        // default title removed
+        supportActionBar?.setDisplayShowTitleEnabled(false)
 
         // no hide icons in status bar
         WindowInsetsControllerCompat(window, window.decorView).isAppearanceLightStatusBars = false
