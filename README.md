@@ -29,6 +29,7 @@ git clone https://github.com/vahidyousefi/wikipedia
 3. Submit a Pull Request.
 
 [Glide]: https://github.com/bumptech/glide
+[Blur View]: https://github.com/Dimezis/BlurView
 [ion Alert]: https://github.com/oktavianto/ionalert
 [Sweet Alert Dialog]: https://github.com/F0RIS/sweet-alert-dialog
 [circle image view]: https://github.com/hdodenhof/CircleImageView
